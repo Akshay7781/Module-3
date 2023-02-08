@@ -1,0 +1,30 @@
+//write a program user enter the 5 subjects mark.you have to make a total and find the percentage.
+#include<stdio.h>
+void main()
+{
+    int phy,che,math,eng,hindi,total;
+    float percentage;
+      
+    printf("enter the marks of 5 subjects=");
+    scanf("%d%d%d%d%d", &phy,&che,&math,&eng,&hindi);
+    
+    total=phy+che+math+eng+hindi;
+    
+    printf("total marks of 5 subjects=%d",total);
+    
+    percentage=total/5;
+    
+    printf("\npercentage=%f",percentage);
+    
+    if (percentage>70)
+        printf("\ndistinction");
+        
+    else if(percentage>60 && percentage<=75)
+         printf("\nfirst class");
+         
+    else if (percentage >50 && percentage<=60)
+         printf("\nsecond class");
+         
+     else if (percentage >35 && percentage <=50)
+         printf("\npass");
+}
