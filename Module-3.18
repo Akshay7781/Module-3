@@ -1,0 +1,15 @@
+//Write program to make an addition of two number using pointer
+#include<stdio.h>
+void main()
+{
+	int *p,*q,*r,a,b;
+	printf("enter two numbers: ");
+	scanf("%d%d",&a,&b);
+	
+	p=&a;
+	q=&b;
+	*r=*p+*q;
+	
+	printf("sum of numbers:%d",*r);
+
+}

@@ -1,0 +1,46 @@
+//Write a program of to find out the Area of Triangle, Rectangle and Circle (must be menu driven)
+#include<stdio.h>
+void main()
+{
+    int ch;
+    float r,result,l,lr,wr;
+    
+    printf("please select your choice: ");
+    printf("\n1.area of circle.");
+    printf("\n2.area of square.");
+    printf("\n3.area of rectangle.");
+    scanf("\n%d",&ch);
+    
+   switch (ch)
+   {
+       case 1:
+                  printf("\nradius of the circle:");
+                  scanf("%f",&r);
+                  result=3.14*r*r;
+                  printf("\narea of circle is =%f",result);
+       break;
+       
+       case 2:
+                 printf("\nlength of the square: ");
+                 scanf("%f",&l);
+                 result=l*l;
+                 printf("\narea of square is =%f",result);
+                 
+       break;
+       
+       case 3:
+                printf("\nlength of the rectangle: ");
+                scanf("%f",&lr);
+                printf("\nwidth of the rectangle: ");
+                scanf("%f",&wr);
+                result=lr*wr;
+                printf("\narea of rectangle is=%f",result);
+        
+        break;
+        
+        default:
+        printf("invalid choice!");
+       
+   }
+    
+}
